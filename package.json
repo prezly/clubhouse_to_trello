@@ -1,0 +1,26 @@
+{
+  "name": "clubhouse_to_trello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prezly/clubhouse_to_trello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prezly/clubhouse_to_trello/issues"
+  },
+  "homepage": "https://github.com/prezly/clubhouse_to_trello#readme",
+  "dependencies": {
+    "clubhouse-lib": "^0.3.1",
+    "commander": "^2.19.0",
+    "dotenv": "^6.1.0",
+    "inquirer": "^6.2.0",
+    "trello": "^0.9.0"
+  }
+}
