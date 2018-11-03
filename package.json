@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "c2t": "./bin/commander.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/prezly/clubhouse_to_trello.git"
