@@ -2,22 +2,22 @@
 
 const program = require('commander');
 
-const create = require('../lib/create');
-const read = require('../lib/read');
+const start = require('../lib/start');
+const finish = require('../lib/finish');
 const clean = require('../lib/clean');
 const testconfig = require('../lib/testconfig');
 
 /*******************************************/
 
 program
-    .command('create')
-    .description('Create trello board and cards')
-    .action(() => { create(); });
+    .command('start')
+    .description('Start by creating board and adding the cards')
+    .action(() => { start(); });
 
 program
-    .command('read')
-    .description('Read trello board and update clubhouse estimation points')
-    .action(() => { read(); });
+    .command('finish')
+    .description('Move estimations from trello board back into clubhouse story estimation points')
+    .action(() => { finish(); });
 
 program
     .command('clean')

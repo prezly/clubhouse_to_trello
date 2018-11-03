@@ -19,7 +19,7 @@ Make sure to set up environment variables with your trello and api credentials. 
 
 ## Local Usage
 
-Now you can run commands like `c2t create` using your local `clubhouse_to_trello-cli`.
+Now you can run commands like `clubhouse_to_trello create` using your local `clubhouse_to_trello-cli`.
 
 ```bash
 Usage: c2t [options] [command]
@@ -28,8 +28,8 @@ Options:
   -h, --help  output usage information
 
 Commands:
-  create      Create trello board and cards
-  read        Read trello board and update clubhouse estimation points
+  start       Create trello board and cards in 'for estimation' list
+  finish      Read trello board and update clubhouse estimation points
   clean       Clean up the board/cards/list
   testconfig  Test your config (connect to trello and clubhouse)
 ```
