@@ -43,6 +43,10 @@ Create trello boards `Magic Estimation Board` with lists and cards
 
 [![asciicast](https://asciinema.org/a/WMK6pLDaMBV3zpSXnRhaJDoYj.svg)](https://asciinema.org/a/WMK6pLDaMBV3zpSXnRhaJDoYj)
 
+After creating the board it will look like
+
+![After creating the board it will look like](docs/created_trello_board?raw=true "Created trello board")
+
 ### update_points
 
 Read where the cards were moved (which list) and thus which points they get.
