@@ -22,20 +22,41 @@ Make sure to set up environment variables with your trello and api credentials. 
 Now you can run commands like `clubhouse_to_trello create` using your local `clubhouse_to_trello-cli`.
 
 ```bash
-Usage: c2t [options] [command]
+Usage: clubhouse_to_trello [options] [command]
 
 Options:
-  -h, --help  output usage information
+  -h, --help            output usage information
 
 Commands:
-  start       Create trello board and cards in 'for estimation' list
-  finish      Read trello board and update clubhouse estimation points
-  clean       Clean up the board/cards/list
-  testconfig  Test your config (connect to trello and clubhouse)
+  start|create_board    Start by creating board and adding the cards
+  finish|update_points  Move estimations from trello board back into clubhouse story estimation points
+  clean|delete          Clean up the board/cards/list
+  test|testconfig       Test your config (connect to trello and clubhouse)
 ```
 
+## Commands
 
-If you want to set up `c2t` to use a non-production server, you can create a file such as `~/.env.example` where you set some environment variables:
+### create_board
+
+Ask you which EPICs from clubhouse you want to estimate.
+Create trello boards `Magic Estimation Board` with lists and cards
+
+### update_points
+
+Read where the cards were moved (which list) and thus which points they get.
+Write changes back to clubhouse as story estimation points.
+
+### clean
+
+Remove the trello boards and cards
+
+### testconfig
+
+Checks if your trello and clubhouse credentials (in `.env`) are correct
+
+---
+
+If you want to set up `clubhouse_to_trello` to use a non-production server, you can create a file such as `~/.env.example` where you set some environment variables:
 
 ```bash
 export TRELLO_API_KEY=changeme0000000
