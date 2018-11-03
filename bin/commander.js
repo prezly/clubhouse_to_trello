@@ -4,7 +4,7 @@ const program = require('commander');
 
 const create = require('../lib/create');
 const read = require('../lib/read');
-const clean = require('../lib/read');
+const clean = require('../lib/clean');
 const testconfig = require('../lib/testconfig');
 
 /*******************************************/
