@@ -61,6 +61,7 @@ If you want to set up `clubhouse_to_trello` to use a non-production server, you 
 ```bash
 export TRELLO_API_KEY=changeme0000000
 export TRELLO_OAUTH_TOKEN=changeme000000
+export TRELLO_ORGANISATION=changeme000000
 export CLUBHOUSE_TOKEN=changeme0000000
 c2t -h
 ```
