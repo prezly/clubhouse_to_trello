@@ -41,6 +41,8 @@ Commands:
 Ask you which EPICs from clubhouse you want to estimate.
 Create trello boards `Magic Estimation Board` with lists and cards
 
+[![asciicast](https://asciinema.org/a/WMK6pLDaMBV3zpSXnRhaJDoYj.svg)](https://asciinema.org/a/WMK6pLDaMBV3zpSXnRhaJDoYj)
+
 ### update_points
 
 Read where the cards were moved (which list) and thus which points they get.
