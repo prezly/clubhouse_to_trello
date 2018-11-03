@@ -3,6 +3,7 @@
 const program = require('commander');
 
 const create = require('../lib/create');
+const read = require('../lib/read');
 const testconfig = require('../lib/testconfig');
 
 /*******************************************/
@@ -16,7 +17,7 @@ program
 program
     .command('read')
     .description('Read trello board and update clubhouse estimation points')
-    .action(() => { create(); });
+    .action(() => { read(); });
 
 program
     .command('testconfig')
