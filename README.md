@@ -2,7 +2,7 @@
 
 This is a commandline script to use drag-and-drop functionality in trello to estimate story points.
 It creates a trello board, creates a few lists (1,2,3,5,8,13) and creates a trello card per story.
-
+ 
 When you are done you can sync back those scores to clubhouse story points.
 
 ## Installing globally
@@ -41,12 +41,6 @@ Commands:
 Ask you which EPICs from clubhouse you want to estimate.
 Create trello boards `Magic Estimation Board` with lists and cards
 
-[![asciicast](https://asciinema.org/a/WMK6pLDaMBV3zpSXnRhaJDoYj.svg)](https://asciinema.org/a/WMK6pLDaMBV3zpSXnRhaJDoYj)
-
-After creating the board it will look like
-
-![After creating the board it will look like](docs/created_trello_board?raw=true "Created trello board")
-
 ### update_points
 
 Read where the cards were moved (which list) and thus which points they get.
@@ -70,6 +64,28 @@ export TRELLO_OAUTH_TOKEN=changeme000000
 export CLUBHOUSE_TOKEN=changeme0000000
 c2t -h
 ```
+
+## Magic Estimation
+
+First convert some clubhouse epics to the trello board:
+
+[![asciicast](https://asciinema.org/a/WMK6pLDaMBV3zpSXnRhaJDoYj.svg)](https://asciinema.org/a/WMK6pLDaMBV3zpSXnRhaJDoYj)
+
+After creating the board it will look like:
+
+![](docs/created_trello_board.png)
+
+Now drag your stories into the different lists. You can create lists with other numbers if you'd like.
+
+![](docs/board_with_estimations.png)
+
+When you are happy hit clubhouse_to_trello finish and cleanup
+
+[![asciicast](https://asciinema.org/a/CKgojSq8XVETUkoc8wQiapNXI.svg)](https://asciinema.org/a/CKgojSq8XVETUkoc8wQiapNXI)
+
+Your clubhouse stories should now have estimation points
+
+![](docs/clubhouse_stories.png)
 
 ## License
 
